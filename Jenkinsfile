@@ -22,7 +22,7 @@ job('Git_Pull'){
 
 
   steps {
-    shell( echo 'deploy the code')
+    echo 'deploy the code'
 
   }
 }
