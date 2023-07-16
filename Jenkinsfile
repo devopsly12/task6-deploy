@@ -25,10 +25,8 @@ job('Git_Pull')
 
   }
   steps {
-    scripct{    
-    sh 'echo "Hello World"'
-    }
-  }
+    'echo "Hello World"'
+     }
 }
 buildPipelineView("K8s Deploy WebApp") {
 	  title("automating CI/CD pipeline")
