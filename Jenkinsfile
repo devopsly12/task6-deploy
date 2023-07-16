@@ -1,4 +1,5 @@
-job('Git_Pull'){
+job('Git_Pull')
+{
 
   description ("This job is for pull the code from jenkins")
 
@@ -12,8 +13,9 @@ job('Git_Pull'){
   steps {
   shell('sh cp -rf * ./ ')
   }
-
-  job("2 Check And Deploy") {
+}
+  job("2 Check And Deploy") 
+  {
   description("This job is for deploying web server")
   
   triggers {
@@ -37,4 +39,3 @@ buildPipelineView("K8s Deploy WebApp") {
 }
 
 
-}
