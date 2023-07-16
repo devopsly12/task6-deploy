@@ -10,10 +10,11 @@ job('Git_Pull')
    triggers {
       scm("* * * * *")
   }
-  steps {
+  steps
+   {
   shell('sh cp -rf * ./ ')
   }
-}
+
   job("2 Check And Deploy") 
   {
   description("This job is for deploying web server")
@@ -22,7 +23,7 @@ job('Git_Pull')
     upstream("Git_Pull")
   }
 
-
+  }
   steps {
     echo 'deploy the code'
 
@@ -37,5 +38,4 @@ buildPipelineView("K8s Deploy WebApp") {
 	  displayedBuilds(1)
 	  showPipelineParameters(true)
 }
-
 
