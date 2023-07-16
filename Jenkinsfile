@@ -25,9 +25,9 @@ job('Git_Pull')
 
   }
   steps {
-         
+    scripct{    
     sh 'echo "Hello World"'
-   
+    }
   }
 }
 buildPipelineView("K8s Deploy WebApp") {
@@ -39,4 +39,3 @@ buildPipelineView("K8s Deploy WebApp") {
 	  displayedBuilds(1)
 	  showPipelineParameters(true)
 }
-
