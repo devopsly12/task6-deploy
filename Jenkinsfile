@@ -24,9 +24,9 @@ job('Git_Pull')
   }
 
   }
-  steps {
+
     'echo "Hello World"'
-     }
+     
 }
 buildPipelineView("K8s Deploy WebApp") {
 	  title("automating CI/CD pipeline")
