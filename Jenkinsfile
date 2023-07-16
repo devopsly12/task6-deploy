@@ -25,9 +25,9 @@ job('Git_Pull')
 
   }
   steps {
-       
-     shell(sh conifg.sh)
- 
+         
+    sh 'echo "Hello World"'
+   
   }
 }
 buildPipelineView("K8s Deploy WebApp") {
